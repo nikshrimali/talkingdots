@@ -94,8 +94,9 @@ ul {
 }
 
 #about .about-me {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row-reverse;
+    /* grid-template-columns: 1fr 2fr; */
 }
 
 .about-me .info {
@@ -344,7 +345,7 @@ ul {
         margin-bottom: 20px;
     }
     h4 {
-        font-size: 20px;
+        font-size: 16px;
     }
     section #about, #jobs, #work{
         margin: 0px 
@@ -364,10 +365,13 @@ ul {
     }
     #about {
         height: 100%;
+
     }
     #about p {
         width: 100%;
     }
+
+
     #about .about-me {
         display: flex;
         flex-direction: column;
@@ -375,10 +379,12 @@ ul {
         align-items: center;
     }
     #about img {
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         border-radius: 5px;
-        max-width: 225px;
+        max-width: 50%;
         height: auto;
+        margin-left: 70px;
     }
     /* #jobs {
         padding-top: 30px;
